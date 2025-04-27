@@ -1,0 +1,53 @@
+# .NET Core build output
+/bin/
+/obj/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer files
+app.publish/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Microsoft Visual Studio for Mac files
+.vscode/
+
+# Npm packages from the backend (if applicable)
+node_modules/
+
+# Logs
+*.log
+
+# Environment Variables (optional, but good practice to avoid pushing secrets)
+.env
+
+# ASP.NET temp files
+App_Data/
+
+# Project specific files (auto-generated)
+project.lock.json
+project.fragment.lock.json
+
+# User-specific files
+.idea/
+
+# Ignore .vscode (IDE specific)
+.vscode/
+
+# npm global packages
+npm/
+yarn/
+
+# Publish output
+wwwroot/
