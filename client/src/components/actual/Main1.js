@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
+=======
+import React from 'react';
+>>>>>>> c8cade39e601dbf934e83902925eb54f91f784d3
 import styles from '../../css/myfile.module.css';
 import Slider from './Slider';
 import {
@@ -15,6 +19,7 @@ import {
   FaWatchmanMonitoring,
   FaCar,
 } from 'react-icons/fa';
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
 
 function Main1() {
@@ -44,11 +49,29 @@ function Main1() {
       .catch(error => console.error('Error fetching categories:', error));
   }, []);
 
+=======
+import { Link } from "react-router-dom"; 
+
+function Main1() {
+  const categories = [
+    { name: 'Groceries & Pets', icon: <FaShoppingBasket /> },
+    { name: 'Health & Beauty', icon: <FaMedkit /> },
+    { name: "Men's Fashion", icon: <FaTshirt /> },
+    { name: "Women's Fashion", icon: <FaFemale /> },
+    { name: 'Mother & Baby', icon: <FaBabyCarriage /> },
+    { name: 'Home & Lifestyle', icon: <FaHome /> },
+    { name: 'Electronic Devices', icon: <FaMobileAlt /> },
+    { name: 'Electronic Accessories', icon: <FaHeadphones /> },
+    { name: 'Watches, Bags & Jewellery', icon: <FaWatchmanMonitoring /> },
+    { name: 'Automotive & Motorbike', icon: <FaCar /> },
+  ];
+>>>>>>> c8cade39e601dbf934e83902925eb54f91f784d3
 
   return (
     <div className={`container ${styles.wrapper}`}>
       {/* Row for both columns */}
       <div className={`row ${styles.row}`}>
+<<<<<<< HEAD
         {/* Left Column */}
         <div className={`col-md-3 ${styles.leftColumn}`}>
           <div className={styles.roundedContainer}>
@@ -68,6 +91,24 @@ function Main1() {
                       </div>
                     </div>
                   </Link>
+=======
+      {/* Left Column */}
+      <div className={`col-md-3 ${styles.leftColumn}`}>
+          <div className={`${styles.roundedContainer}`}>
+            <div className={styles.categoriesContainer}>
+              {categories.map((category, index) => (
+                <div key={index} className={styles.categoryItem}>
+                    <Link to="/category/product" className={styles.catlink}>
+                    <div className='row'>
+                        <div className='col-md-2'>
+                        {category.icon}
+                        </div>
+                        <div className='col-md-10'>
+                        <p>{category.name}</p>
+                        </div>
+                    </div>
+                    </Link>
+>>>>>>> c8cade39e601dbf934e83902925eb54f91f784d3
                 </div>
               ))}
             </div>

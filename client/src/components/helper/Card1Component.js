@@ -116,7 +116,6 @@ function Card1Component({ width, product }) {
         </Card.Body>
 
       </Card>
-
       {showOverlay && <CardOverlay onClose={handlePlusButtonClick} />}
     </>
   );
